@@ -1,0 +1,89 @@
+:root {
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --border: #d1d5db;
+  --shadow: rgba(17, 24, 39, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, #eef2ff, var(--bg));
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app__header h1 {
+  margin: 0 0 8px;
+}
+
+.app__header p {
+  margin: 0 0 20px;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 8px 20px var(--shadow);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+}
+
+.control input[type="range"] {
+  width: 130px;
+}
+
+#clearCanvas {
+  border: 1px solid var(--border);
+  background: #f9fafb;
+  border-radius: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 600;
+}
+
+#clearCanvas:hover {
+  background: #f3f4f6;
+}
+
+.canvas-wrap {
+  margin-top: 16px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 24px var(--shadow);
+}
+
+#doodleCanvas {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  background: #ffffff;
+  cursor: crosshair;
+}
