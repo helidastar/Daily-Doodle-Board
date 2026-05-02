@@ -66,6 +66,6 @@ Example commands:
 7. Your site will be live at:
    - `https://<your-username>.github.io/Daily-Doodle-Board/`
 
-## Resume-Friendly Description
+## Description
 
 Built an interactive drawing board web app using HTML Canvas and vanilla JavaScript, implementing mouse-based freehand drawing, dynamic brush controls, and a responsive UI.
